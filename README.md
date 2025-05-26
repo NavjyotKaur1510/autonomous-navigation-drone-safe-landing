@@ -18,4 +18,4 @@ This project was part of the ISRO IRoC-U 2025 challenge, where we built a drone 
  ###  Key Highlights :-
 - Developed a **real-time vision system** that could detect obstacles and hazards while in flight.
 - Provided **precise coordinates** of potential landing spots to the drone's navigation system.
-- Achieved **94% classification accuracy**, enhancing the drone’s **autonomy and safety**, a critical requirement for planetary exploration missions like those on **Mars**.
+- Achieved **94% detection accuracy**, enhancing the drone’s **autonomy and safety**, a critical requirement for planetary exploration missions like those on **Mars**.
