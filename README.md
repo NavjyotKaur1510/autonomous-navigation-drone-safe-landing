@@ -1,5 +1,5 @@
 # Autonomous Navigation Drone (ANAV): Safe Landing Detection 
-This project was part of the ISRO IRoC-U 2025 challenge, where we built a drone that can fly and land on its own—without any external GPS or signals, just like it would on Mars. The goal was to make the drone smart enough to find a safe place to land, even in tricky conditions.
+In this project we built a drone that can fly and land on its own—without any external GPS or signals, just like it would on Mars. The goal was to make the drone smart enough to find a safe place to land, even in tricky conditions.
 
 ### My contributions :-
 
