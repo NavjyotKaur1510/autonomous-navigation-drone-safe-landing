@@ -1,21 +1,31 @@
-# Autonomous Navigation Drone (ANAV): Safe Landing Detection 
-In this project we built a drone that can fly and land on its own—without any external GPS or signals, just like it would on Mars. The goal was to make the drone smart enough to find a safe place to land, even in tricky conditions.
+# ANAV Drone – Autonomous Safe Landing Detection (Vision-Based)
 
-### My contributions :-
+This project implements a vision-based autonomous landing detection system for drones operating in GPS-denied environments. The system uses real-time camera input to identify safe and unsafe landing zones using classical computer vision techniques, inspired by planetary exploration scenarios such as Mars landings.
 
-   - Wrote the computer vision code using Python and OpenCV to let the drone see and decide where it’s safe to land.
+---
 
-   - Developed a system that could detect both safe and unsafe landing spots and give their exact positions for the drone to use.
+## Problem Statement
+Enable a drone to autonomously identify safe landing zones without relying on GPS or external positioning systems, using only onboard visual input.
 
-   - Helped combine the vision system with the drone’s controls, so it could land smoothly and safely on its own.
+---
 
- ### Tools & Technologies Used :-
-- **Python**  
-- **OpenCV**
-- **Computer Vision**
-- **Basic image processing algorithms** for safe/unsafe area detection
+## Solution Overview
+A real-time computer vision pipeline processes live camera feed to:
+- Detect obstacles and hazardous regions
+- Identify obstacle-free (safe) landing zones
+- Output precise bounding box coordinates for navigation and landing decisions
 
- ###  Key Highlights :-
-- Developed a **real-time vision system** that could detect obstacles and hazards while in flight.
-- Provided **precise coordinates** of potential landing spots to the drone's navigation system.
-- Achieved **94% detection accuracy**, enhancing the drone’s **autonomy and safety**, a critical requirement for planetary exploration missions like those on **Mars**.
+---
+
+## System Pipeline
+1. Capture live video feed (webcam / drone camera)
+2. Image preprocessing (resize, grayscale, blur)
+3. Edge detection using Canny
+4. Contour extraction for obstacle detection
+5. Safe zone identification using grid-based mask analysis
+6. Bounding box generation for safe and unsafe regions
+
+---
+
+
+
